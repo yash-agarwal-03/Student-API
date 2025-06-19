@@ -1,10 +1,6 @@
 import mongoose from "mongoose";
 
 const studentSchema = new mongoose.Schema({
-  _id:{
-    type:Number,
-    default:Date.now()
-  },
   name: {
     type: String,
     required: [true, "Name is required"],
