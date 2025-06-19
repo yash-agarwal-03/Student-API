@@ -19,6 +19,7 @@ A simple RESTful API for managing student records, built with **Node.js**, **Exp
 .
 ├── .env
 ├── .gitignore
+├── node_modules/
 ├── package.json
 ├── server.js
 ├── models/
@@ -99,6 +100,3 @@ A simple RESTful API for managing student records, built with **Node.js**, **Exp
 
 ---
 
-## License
-
-This project is licensed under the **ISC** license.
