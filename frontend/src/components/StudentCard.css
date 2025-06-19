@@ -1,0 +1,85 @@
+.student-card {
+  background: #f5eee6;
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  margin: 1em;
+  padding: 1.5em 1.7em;
+  min-width: 260px;
+  max-width: 340px;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.3s, background 0.7s cubic-bezier(.4,0,.2,1), color 0.7s cubic-bezier(.4,0,.2,1);
+  color: #23272f;
+  animation: fadeIn 1.2s cubic-bezier(.4,0,.2,1);
+}
+.container.dark .student-card {
+  background: rgba(24, 26, 32, 0.98);
+  color: #FFD369;
+}
+.student-card:hover {
+  box-shadow: 0 6px 24px rgba(255,211,105,0.12);
+  transform: translateY(-4px) scale(1.03);
+}
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  color: #FFD369;
+  margin-bottom: 0.7em;
+  font-size: 1.15em;
+}
+.student-name {
+  color: #FFD369;
+  font-weight: 700;
+}
+.container.dark .student-name {
+  color: #FFD369;
+}
+.student-class {
+  background: #f3f3f3;
+  color: #23272f;
+  border-radius: 8px;
+  padding: 0 0.7em;
+  font-size: 1em;
+  font-weight: 600;
+}
+.container.dark .student-class {
+  background: #181a20;
+  color: #FFD369;
+}
+.card-body {
+  color: #23272f;
+  margin-bottom: 0.9em;
+}
+.container.dark .card-body {
+  color: #FFD369;
+}
+.card-actions {
+  display: flex;
+  gap: 0.7em;
+}
+.card-actions button {
+  background: #FFD369;
+  color: #23272f;
+  border: none;
+  border-radius: 8px;
+  padding: 0.5em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+.card-actions button:hover {
+  background: #ffe9a7;
+  color: #23272f;
+  transform: scale(1.05);
+}
+.card-actions .delete {
+  background: #b94a48;
+  color: #fff;
+}
+.card-actions .delete:hover {
+  background: #FFD369;
+  color: #b94a48;
+}

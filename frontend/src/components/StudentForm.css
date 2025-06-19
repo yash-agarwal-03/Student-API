@@ -1,0 +1,68 @@
+.student-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2em 2em;
+  background: #f5eee6;
+  padding: 2em 1.5em;
+  border-radius: 16px;
+  margin-bottom: 2em;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.06);
+  color: #23272f;
+  transition: background 0.7s cubic-bezier(.4,0,.2,1), color 0.7s cubic-bezier(.4,0,.2,1);
+  animation: fadeIn 1.1s cubic-bezier(.4,0,.2,1);
+}
+.container.dark .student-form {
+  background: rgba(24, 26, 32, 0.98);
+  color: #FFD369;
+}
+.student-form input {
+  padding: 0.8em;
+  border: 1.5px solid #FFD369;
+  border-radius: 8px;
+  font-size: 1.1em;
+  background: #f3f3f3;
+  color: #23272f;
+  margin-bottom: 0.5em;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+.container.dark .student-form input {
+  background: #181a20;
+  color: #FFD369;
+  border: 1.5px solid #FFD369;
+}
+.student-form input:focus {
+  border-color: #393e46;
+  outline: none;
+}
+.form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 0.7em;
+  align-items: center;
+  justify-content: flex-end;
+}
+.student-form button {
+  background: #FFD369;
+  color: #23272f;
+  border: none;
+  border-radius: 8px;
+  padding: 0.7em 1.5em;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+.student-form button:hover {
+  background: #ffe9a7;
+  color: #23272f;
+  transform: scale(1.05);
+}
+.student-form button[type="button"] {
+  background: #eaeaea;
+  color: #23272f;
+}
+.container.dark .student-form button[type="button"] {
+  background: #FFD369;
+  color: #23272f;
+}

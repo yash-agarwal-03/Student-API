@@ -1,0 +1,95 @@
+.edit-modal-overlay {
+  position: fixed;
+  inset: 0; /* shorthand for top: 0; right: 0; bottom: 0; left: 0 */
+  background: rgba(34, 32, 28, 0.32);
+  backdrop-filter: blur(7px);
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.18s cubic-bezier(.4,0,.2,1);
+  opacity: 1;
+}
+
+.edit-modal {
+  position: relative;
+  background: #f3ede2;
+  color: #2d2a26;
+  border-radius: 18px;
+  padding: 2.2em 2em 1.5em 2em;
+  max-width: 800px;
+  width: 90%;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.13);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: scale(1);
+  opacity: 1;
+  transition: opacity 0.18s cubic-bezier(.4,0,.2,1), transform 0.18s cubic-bezier(.4,0,.2,1);
+}
+
+.container.dark .edit-modal {
+  background: #23272f;
+  color: #FFD369;
+}
+
+.edit-modal h2 {
+  margin-top: 0;
+  margin-bottom: 1.2em;
+  font-size: 1.4em;
+  font-weight: 700;
+  color: #FFD369;
+}
+
+.edit-modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+.edit-modal-form input {
+  padding: 0.7em;
+  border: 1.5px solid #FFD369;
+  border-radius: 8px;
+  font-size: 1.1em;
+  background: #ece7de;
+  color: #2d2a26;
+  transition: background 0.3s, color 0.3s, border 0.3s;
+}
+
+.container.dark .edit-modal-form input {
+  background: #181a20;
+  color: #FFD369;
+  border: 1.5px solid #FFD369;
+}
+
+.edit-modal-actions {
+  display: flex;
+  gap: 1em;
+  justify-content: flex-end;
+  margin-top: 1.2em;
+}
+
+.edit-modal-actions button {
+  background: #FFD369;
+  color: #23272f;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6em 1.3em;
+  font-size: 1em;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+.edit-modal-actions button:hover {
+  background: #ffe28a;
+  color: #23272f;
+  transform: scale(1.05);
+}
